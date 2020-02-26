@@ -72,7 +72,6 @@ func downloadBackups() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//defer srcFile.Close()
 
 	// copy source file to destination file
 	bytes, err := io.Copy(dstFile, srcFile)
@@ -100,7 +99,6 @@ func downloadBackups() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	//defer srcFile2.Close()
 
 	// copy source file to destination file
 	bytes, err = io.Copy(dstFile2, srcFile2)
